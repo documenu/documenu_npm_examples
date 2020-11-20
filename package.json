@@ -1,0 +1,20 @@
+{
+  "name": "documenu",
+  "version": "1.0.0",
+  "description": "Package to easily use Documenu API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Documenu",
+    "Restaurant",
+    "Menu",
+    "API"
+  ],
+  "author": "contact@documenu.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
