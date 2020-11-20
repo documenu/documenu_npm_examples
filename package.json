@@ -1,6 +1,6 @@
 {
   "name": "documenu",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Package to easily use Documenu API",
   "main": "index.js",
   "scripts": {
@@ -12,8 +12,13 @@
     "Menu",
     "API"
   ],
+  "repository": {
+  "type" : "git",
+  "url" : "https://github.com/documenu/documenu-npm"
+},
   "author": "contact@documenu.com",
   "license": "ISC",
+  "homepage": "https://github.com/documenu/documenu-npm",
   "dependencies": {
     "axios": "^0.21.0"
   }
