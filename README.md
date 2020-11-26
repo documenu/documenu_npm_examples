@@ -1,7 +1,8 @@
 # documenu-npm
+## Code Examples
 
 Documenu is an that API provides access to a Database of over 600,000 US Restaurant Menus with over 50,000,000 individual menu items.
-[https://documenu.com](https://documenu.com)
+[https://documenu.com](https://www.documenu.com/?utm_source=npm%2Cgithub&utm_medium=readme&utm_campaign=npm_package)
 
 This package is intended to make it easier to interact with the API when using NodeJS
 
@@ -12,7 +13,7 @@ npm install -S documenu
 
 ## Configure
 
-In order to use this API you need an API key. You can get it here: [Get API Key](https://documenu.com/register)
+In order to use this API you need an API key. You can get it here: [Get API Key](https://www.documenu.com/register?utm_source=npm%2Cgithub&utm_medium=readme&utm_campaign=npm_package)
 
 ```js
 const Documenu = require('documenu')
@@ -53,7 +54,7 @@ Documenu.Restaurants.MenuItems.searchGeo(params)
 ### Restaurants
   - `get(restaurantid)`
     - `restaurantid : string`
-  - `getMenuItems(restaurantid)`
+  - `getMenuItems(restaurantid,params)`
     - `restaurantid : string`
     - `Params (Optional)`
       - `size | number | Data Size of Results	`
@@ -84,7 +85,7 @@ Documenu.Restaurants.MenuItems.searchGeo(params)
     - `Params (Optional)`
       - `size | number | Data Size of Results `
       - `page | number | Page Through Results `  
-      - `fullmenu | Boolean | include full menus ` 
+      - `fullmenu | Boolean | include full menus `
   - `getByZipCode(zip,params)`
     - `zip : string`  
     - `Params (Optional)`
@@ -94,12 +95,12 @@ Documenu.Restaurants.MenuItems.searchGeo(params)
   - `geoBoundingBox(params)`
     - `Params (Required)`
       - `top_left | string | Top Left coordinates of Bounding Box in lat,lon `  
-      - `bottom_right  | string | Bottom Right coordinates of Bounding Box in lat,lon` 
+      - `bottom_right  | string | Bottom Right coordinates of Bounding Box in lat,lon`
     - `Params (Optional)`
       - `size | number | Data Size of Results `
       - `page | number | Page Through Results `  
       - `fullmenu | Boolean | include full menus `   
-  - `withinTravelRadius(state,params)`
+  - `withinTravelRadius(params)`
     - `Params (Required)`
       - `lat | number | Latitude of search area `  
       - `lon | number | Longitude of search area `  
@@ -110,11 +111,11 @@ Documenu.Restaurants.MenuItems.searchGeo(params)
       - `page | number | Page Through Results `  
       - `fullmenu | Boolean | include full menus `   
   - `withinGeoPolygon(points,params)`
-    - `points: Array of points in [[lat,lon]] format` 
+    - `points: Array of points in [[lat,lon]] format`
     - `Params (Optional)`
       - `size | number | Data Size of Results `
       - `page | number | Page Through Results `  
-      - `fullmenu | Boolean | include full menus ` 
+      - `fullmenu | Boolean | include full menus `
 
 ### MenuItems
   - `get(itemid)`
@@ -130,6 +131,6 @@ Documenu.Restaurants.MenuItems.searchGeo(params)
 
 ## API Docs
 
-View API Docs here: [https://documenu.com/docs](https://documenu.com/docs)
+View API Docs here: [https://documenu.com/docs](https://www.documenu.com/docs?utm_source=npm%2Cgithub&utm_medium=readme&utm_campaign=npm_package)
 
 For Support Email support@documenu.com
